@@ -1,0 +1,54 @@
+# dependencies
+node_modules/
+.pnpm/
+.vite/
+
+# build output
+dist/
+build/
+out/
+
+# production
+.env
+.env.*.local
+.env.local
+
+# testing
+coverage/
+*.lcov
+
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# editor / system files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# OS
+*.bak
+*.tmp
+*.orig
+
+# parcel-bundler cache
+.cache/
+
+# next.js
+.next/
+
+# vercel
+.vercel/
+
+# yarn
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
