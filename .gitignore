@@ -1,54 +1,19 @@
-# dependencies
-node_modules/
-.pnpm/
-.vite/
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars
+terraform.tfvars.json
+*.tfplan
 
-# build output
-dist/
-build/
-out/
-
-# production
-.env
-.env.*.local
-.env.local
-
-# testing
-coverage/
-*.lcov
-
-# logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# editor / system files
+# VSCode (nếu bạn dùng)
 .vscode/
-.idea/
-*.swp
-*.swo
+
+# macOS system files
 .DS_Store
-Thumbs.db
 
-# OS
-*.bak
-*.tmp
-*.orig
-
-# parcel-bundler cache
-.cache/
-
-# next.js
-.next/
-
-# vercel
-.vercel/
-
-# yarn
-.yarn/cache/
-.yarn/unplugged/
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.*
+# Logs
+*.log
