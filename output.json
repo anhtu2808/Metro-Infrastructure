@@ -1,0 +1,47 @@
+{
+    "content_image_bucket_arn": {
+      "sensitive": false,
+      "type": "string",
+      "value": "arn:aws:s3:::metro-content-image-bucket"
+    },
+    "content_image_bucket_name": {
+      "sensitive": false,
+      "type": "string",
+      "value": "metro-content-image-bucket"
+    },
+    "iam_role_content_arn": {
+      "sensitive": false,
+      "type": "string",
+      "value": "arn:aws:iam::298689733666:role/metro-s3-upload-content"
+    },
+    "iam_role_station_arn": {
+      "sensitive": false,
+      "type": "string",
+      "value": "arn:aws:iam::298689733666:role/metro-s3-upload-station"
+    },
+    "iam_role_useravt_arn": {
+      "sensitive": false,
+      "type": "string",
+      "value": "arn:aws:iam::298689733666:role/metro-s3-upload-useravt"
+    },
+    "station_image_bucket_arn": {
+      "sensitive": false,
+      "type": "string",
+      "value": "arn:aws:s3:::metro-station-image-bucket"
+    },
+    "station_image_bucket_name": {
+      "sensitive": false,
+      "type": "string",
+      "value": "metro-station-image-bucket"
+    },
+    "user_avt_bucket_arn": {
+      "sensitive": false,
+      "type": "string",
+      "value": "arn:aws:s3:::metro-user-avt-bucket"
+    },
+    "user_avt_bucket_name": {
+      "sensitive": false,
+      "type": "string",
+      "value": "metro-user-avt-bucket"
+    }
+  }

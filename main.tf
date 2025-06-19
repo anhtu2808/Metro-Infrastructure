@@ -18,24 +18,21 @@ module "s3_content_image" {
   bucket_name = var.content_image_bucket
 }
 
-# --- IAM role for each bucket (Lambda or EC2) ---
-module "iam_s3_upload_useravt" {
-  source          = "./modules/iam-s3-upload"
-  role_name       = "metro-s3-upload-useravt"
-  bucket_arn      = module.s3_user_avt.bucket_arn
-  trusted_service = "lambda.amazonaws.com"
+# --- IAM users for Spring Boot S3 upload ---
+module "iam_s3_user_useravt" {
+  source     = "./modules/iam-s3-user"
+  user_name  = "metro-s3-user-useravt"
+  bucket_arn = module.s3_user_avt.bucket_arn
 }
 
-module "iam_s3_upload_station" {
-  source          = "./modules/iam-s3-upload"
-  role_name       = "metro-s3-upload-station"
-  bucket_arn      = module.s3_station_image.bucket_arn
-  trusted_service = "lambda.amazonaws.com"
+module "iam_s3_user_station" {
+  source     = "./modules/iam-s3-user"
+  user_name  = "metro-s3-user-station"
+  bucket_arn = module.s3_station_image.bucket_arn
 }
 
-module "iam_s3_upload_content" {
-  source          = "./modules/iam-s3-upload"
-  role_name       = "metro-s3-upload-content"
-  bucket_arn      = module.s3_content_image.bucket_arn
-  trusted_service = "lambda.amazonaws.com"
+module "iam_s3_user_content" {
+  source     = "./modules/iam-s3-user"
+  user_name  = "metro-s3-user-content"
+  bucket_arn = module.s3_content_image.bucket_arn
 }
